@@ -9,7 +9,7 @@ const {
   getProductReviews,
   deleteProductReviews,
   getAdminProduct,
-} = require("../controller/productcontroller");
+} = require("../controller/productController");
 const { isAuthenticationUser, authorizeRoles } = require("../middleware/auth");
 
 const Router = express.Router();
