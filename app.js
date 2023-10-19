@@ -17,7 +17,12 @@ const order = require("./routes/orderRoute");
 const payment = require("./routes/paymentRoute");
 
 app.use(express.json());
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://zesty-malabi-53fb3d.netlify.app/", // Set the origin of your frontend
+    credentials: true, // Allow cookies and credentials to be sent
+  })
+);
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(fileUpload());
