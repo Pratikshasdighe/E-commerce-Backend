@@ -19,7 +19,7 @@ const payment = require("./routes/paymentRoute");
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://wondrous-wisp-ed163c.netlify.app", // Set the origin of your frontend
+    origin: "https://starlit-cranachan-97a021.netlify.app", // Set the origin of your frontend
     credentials: true, // Allow cookies and credentials to be sent
   })
 );
